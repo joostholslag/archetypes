@@ -1,0 +1,63 @@
+archetype (adl_version=2.0.5; rm_release=1.0.4)
+    openEHR-EHR-ADMIN_ENTRY.involved_parties.v0.0.1
+
+language
+    original_language = <[ISO_639-1::nl]>
+
+description
+    original_author = <
+        ["name"] = <"Stefan Teijgeler">
+    >
+    lifecycle_state = <"unmanaged">
+    details = <
+        ["nl"] = <
+            language = <[ISO-639_1::nl]>
+            purpose = <"To record specialists/nurses or other involved parties">
+        >
+    >
+
+definition
+    ADMIN_ENTRY[id1] matches {    -- Betrokken partijen
+        data matches {
+            ITEM_TREE[id2] matches {
+                items matches {
+                    CLUSTER[id3] matches {    -- Partij
+                        items matches {
+                            ELEMENT[id4] matches {    -- Naam
+                                value matches {
+                                    DV_TEXT[id6] 
+                                }
+                            }
+                            ELEMENT[id5] matches {    -- Functie
+                                value matches {
+                                    DV_TEXT[id7] 
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+terminology
+    term_definitions = <
+        ["nl"] = <
+            ["id1"] = <
+                text = <"Betrokken partijen">
+                description = <"Betrokken partijen">
+            >
+            ["id3"] = <
+                text = <"Partij">
+                description = <"">
+            >
+            ["id4"] = <
+                text = <"Naam">
+                description = <"">
+            >
+            ["id5"] = <
+                text = <"Functie">
+                description = <"">
+            >
+        >
+    >

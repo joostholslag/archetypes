@@ -1,0 +1,49 @@
+archetype (adl_version=2.0.5; rm_release=1.0.4)
+    openEHR-EHR-SECTION.Doelen.v0.0.1
+
+language
+    original_language = <[ISO_639-1::nl]>
+
+description
+    original_author = <
+        ["name"] = <"Joost">
+    >
+    lifecycle_state = <"unmanaged">
+    details = <
+        ["nl"] = <
+            language = <[ISO-639_1::nl]>
+            purpose = <"Doelen in het behandelplan vastleggen">
+        >
+    >
+
+definition
+    SECTION[id1] matches {    -- Doel actie combinatie
+        items matches {
+            allow_archetype EVALUATION[id2] matches {     -- Doel
+                include
+                    archetype_id/value matches {/openEHR-EHR-EVALUATION.goal-.*.v1/}
+            }
+            allow_archetype SECTION[id3] matches {     -- Acties
+                include
+                    archetype_id/value matches {/openEHR-EHR-SECTION.Acties-.*.v0/}
+            }
+        }
+    }
+
+terminology
+    term_definitions = <
+        ["nl"] = <
+            ["id1"] = <
+                text = <"Doel actie combinatie">
+                description = <"Doelen in het behandelplan">
+            >
+            ["id2"] = <
+                text = <"Doel">
+                description = <"">
+            >
+            ["id3"] = <
+                text = <"Acties">
+                description = <"">
+            >
+        >
+    >
