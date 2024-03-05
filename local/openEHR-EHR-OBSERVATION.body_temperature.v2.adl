@@ -29,14 +29,6 @@ language
 				["email"] = <"ext.kirsi.poikela@tieto.com">
 			>
 		>
-		["fi"] = <
-			language = <[ISO_639-1::fi]>
-			author = <
-				["name"] = <"Vesa Peltola">
-				["organisation"] = <"Tieto Finland">
-				["email"] = <"vesa.peltola@tieto.com">
-			>
-		>
 		["es-ar"] = <
 			language = <[ISO_639-1::es-ar]>
 			author = <
@@ -59,10 +51,11 @@ language
 		["pt-br"] = <
 			language = <[ISO_639-1::pt-br]>
 			author = <
-				["name"] = <"Ana Paula de Andrade">
-				["organisation"] = <"Core Consulting">
-				["email"] = <"ana.andrade@coreconsulting.com.br">
+				["name"] = <"Marco Borges">
+				["organisation"] = <"P2D">
+				["email"] = <"marco.borges@p2d.com.br">
 			>
+			accreditation = <"P2D Health Advisor Council">
 		>
 		["ja"] = <
 			language = <[ISO_639-1::ja]>
@@ -82,14 +75,6 @@ language
 			author = <
 				["name"] = <"Shahla Foozonkhah">
 				["organisation"] = <"Ocean Informatics">
-			>
-		>
-		["it"] = <
-			language = <[ISO_639-1::it]>
-			author = <
-				["name"] = <"Paolo Anedda">
-				["organisation"] = <"Inpeco">
-				["email"] = <"paolo.anedda@inpeco.com">
 			>
 		>
 		["es"] = <
@@ -131,19 +116,6 @@ Bitte beachten: Die Stelle und Methode der Messung muss ggf. dem Endverbraucher 
 
 
 Dieser Archetyp soll nicht benutzt werden, um die Temperatur eines Körperteils isoliert zu messen, z. B. die Temperatur an der Fußsohle im Rahmen des Managements von chronischem Diabetes.">
-		>
-		["fi"] = <
-			language = <[ISO_639-1::fi]>
-			purpose = <"Henkilön lämpötilan mittaamista varten. ">
-			keywords = <"lämpötila, kuume, hypotermia, hypertermia", ...>
-			use = <"Yksilön lämpötilan kirjaamista varten.
-
-Lisäklustereita voidaan sisällyttää lisätietojen tallentamista varten, mukaan lukien ympäristöolosuhteet ja yksityiskohtaiset rasitustiedot.
-
-Huomio: Mittauspaikka ja mittaustapa voi olla hyödyllistä näyttää käyttäjälle lämpötilan tarkan tulkinnan helpottamiseksi.">
-			misuse = <"Tätä arkkityyppiä ei käytetä kuvaamaan minkään muun kohteen kuin potilaan lämpötilaa.
-
-Tätä arkkityyppiä ei käytetä kehon osan lämpötilan tallentamiseen erillään, esim. jalan pohjan lämpötila osana kroonista diabeteksen hoitoa.">
 		>
 		["sv"] = <
 			language = <[ISO_639-1::sv]>
@@ -191,13 +163,13 @@ Este arquetipo no debe usarse para registrar la temperatura de una parte del cue
 		>
 		["pt-br"] = <
 			language = <[ISO_639-1::pt-br]>
-			purpose = <"Registrar a temperatura aferida de uma pessoa - substituto para temperatura corporal central.">
-			keywords = <"temperatura","corpo","central","febre","hipotermia","hipertermia">
+			purpose = <"Para registrar a temperatura aferida de uma pessoa - com valor médio equivalente para o corpo inteiro.">
+			keywords = <"temperatura","corpo","febre","hipotermia","hipertermia">
 			copyright = <"© openEHR Foundation">
-			use = <"Usado para registrar a temperatura corporal de uma pessoa, o qual é um substituto para a temperatura corporal central.
-Clusters adicionais podem ser incluídos para fornecer dados adicionais - incluindo as condições ambientais e detalhes de esforço, quando apropriado.
+			use = <"Usado para registrar a temperatura corporal de uma pessoa ou organismo.
+Clusters adicionais podem ser incluídos para fornecer dados adicionais - incluindo as condições ambientais, os detalhes do ciclo menstrual e detalhes de esforço, se for caso.
 
-Observação: O local e método de gravação podem precisar ser exibidos ao usuário final para facilitar a interpretação exata da temperatura registrada.">
+Observação: O local e método de gravação podem precisar de ser exibidos ao usuário final para facilitar a interpretação exata da temperatura registrada.">
 			misuse = <"Esse arquétipo não pode ser usado para registrar a temperatura de qualquer outro objeto.
 Esse arquétipo não pode ser usado para registrar a temperatura de uma parte do corpo isoladamente, por exemplo, temperatura da sola do pé, como parte do controle de diabetes crônica.">
 		>
@@ -248,20 +220,6 @@ This archetype is not to be used to record the temperature of a part of the body
 به عنوان مثال دمای کف پا به عنوان بخشی از پایش دیابت مزمن- بصورت جداگانه استفاده نمی شود
    ">
 		>
-		["it"] = <
-			language = <[ISO_639-1::it]>
-			purpose = <"Registrare la temperatura misurata di una persona - come surrogato della temperatura del corpo centrale.">
-			keywords = <"temperatura, corpo, tronco, febbre, ipotermia, ipertermia", ...>
-			use = <"
-Utilizzato per registrare la misurazione della temperatura corporea di un individuo, che è un indicatore della temperatura corporea interna dell'individuo.
-
-Possono essere inclusi ulteriori cluster per fornire dati aggiuntivi sullo stato - comprese le condizioni ambientali e i dettagli dello stato di fatica, se del caso.
-
-Nota: il sito e il metodo di registrazione potrebbero dover essere visualizzati all'utente finale per facilitare l'interpretazione accurata della temperatura registrata.">
-			misuse = <"Questo archetipo non deve essere usato per registrare la temperatura di alcun altro oggetto.
-
-Questo archetipo non deve essere usato per registrare la temperatura di una parte del corpo in isolamento, ad esempio la temperatura della pianta del piede come parte della gestione del diabete cronico">
-		>
 		["es"] = <
 			language = <[ISO_639-1::es]>
 			purpose = <"Registrar la temperatura medida de una persona - como un derivado de la temperatura corporal">
@@ -275,17 +233,17 @@ Este arquetipo no debe usarse para registrar la temperatura de una parte del cue
 		>
 	>
 	other_details = <
-		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/.">
 		["custodian_organisation"] = <"Nasjonal IKT">
 		["references"] = <"Body temperature, Deprecated archetype [Internet]. openEHR Foundation, openEHR Clinical Knowledge Manager [cited: 2018-01-11]. Available from: http://openehr.org/ckm/#showArchetype_1013.1.49">
 		["current_contact"] = <"Heather Leslie, Atomica Informatics<heather.leslie@atomicainformatics.com>">
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"no.nasjonalikt">
-		["MD5-CAM-1.0.1"] = <"733F8EDC3F3CC4D89CAEA9595C4AC427">
-		["build_uid"] = <"79eb32ca-ac46-4a12-99a2-b65c64e22795">
+		["MD5-CAM-1.0.1"] = <"2CCE093FD82CC67655AA62387FA3DB24">
+		["build_uid"] = <"ece89dda-1241-4942-bd56-dc96c848941b">
 		["ip_acknowledgements"] = <"This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/get-snomedct or info@snomed.org.">
-		["revision"] = <"2.1.0">
+		["revision"] = <"2.0.2">
 	>
 
 definition
@@ -300,7 +258,7 @@ definition
 									ELEMENT[at0004] matches {    -- Temperature
 										value matches {
 											C_DV_QUANTITY <
-												
+												property = <[openehr::127]>
 												list = <
 													["1"] = <
 														units = <"Cel">
@@ -347,21 +305,16 @@ definition
 											DV_TEXT matches {*}
 										}
 									}
-									ELEMENT[at0065] occurrences matches {0..1} matches {    -- Day of menstrual cycle
+									ELEMENT[at0065] occurrences matches {0..1} matches {    -- Current day of menstrual cycle
 										value matches {
 											DV_COUNT matches {
 												magnitude matches {|>=1|}
 											}
 										}
 									}
-									ELEMENT[at0066] occurrences matches {0..*} matches {    -- Confounding factors
-										value matches {
-											DV_TEXT matches {*}
-										}
-									}
 									allow_archetype CLUSTER[at0056] occurrences matches {0..*} matches {    -- Environmental conditions
 										include
-											archetype_id/value matches {/openEHR-EHR-CLUSTER\.environmental_conditions\.v1|openEHR-EHR-CLUSTER\.environmental_conditions\.v0/}
+											archetype_id/value matches {/openEHR-EHR-CLUSTER\.environmental_conditions\.v1|openEHR-EHR-CLUSTER\.environmental_conditions\.v0|openEHR-EHR-CLUSTER\.device(-[a-zA-Z0-9_]+)*\.v1/}
 									}
 									allow_archetype CLUSTER[at0057] occurrences matches {0..1} matches {    -- Exertion
 										include
@@ -402,13 +355,15 @@ definition
 					}
 					allow_archetype CLUSTER[at0064] occurrences matches {0..*} matches {    -- Structured measurement location
 						include
-							archetype_id/value matches {/openEHR-EHR-CLUSTER\.anatomical_location(-[a-zA-Z0-9_]+)*\.v1|openEHR-EHR-CLUSTER\.anatomical_location_relative\.v1/}
+							archetype_id/value matches {/openEHR-EHR-CLUSTER\.anatomical_location(-[a-zA-Z0-9_]+)*\.v1/}
 					}
 					allow_archetype CLUSTER[at0059] occurrences matches {0..1} matches {    -- Device
 						include
 							archetype_id/value matches {/openEHR-EHR-CLUSTER\.device\.v1/}
 					}
 					allow_archetype CLUSTER[at0062] occurrences matches {0..*} matches {    -- Extension
+						include
+							archetype_id/value matches {/.*/}
 					}
 				}
 			}
@@ -438,7 +393,7 @@ ontology
 				>
 				["at0004"] = <
 					text = <"درجة الحرارة">
-					description = <"*The measured temperature. (en)">
+					description = <"درجة الحرارة التي تم قياسها - كبديل عن الجسم الكلي">
 				>
 				["at0020"] = <
 					text = <"*Protocol(en)">
@@ -446,7 +401,7 @@ ontology
 				>
 				["at0021"] = <
 					text = <"*Location of measurement(en)">
-					description = <"*Simple description about the site of measurement. (en)">
+					description = <"*The anatomical site of measurement of the temperature.(en)">
 				>
 				["at0022"] = <
 					text = <"الفم">
@@ -502,7 +457,7 @@ ontology
 				>
 				["at0041"] = <
 					text = <"وصف الضغط الحرارة">
-					description = <"*Narrative description of the conditions applied to the subject that might influence their measured body temperature. (en)">
+					description = <"وصف للظروف المُطبَّقة على المريض و التي قد تؤثر على درجة الحرارة التي يتم قياسها">
 				>
 				["at0043"] = <
 					text = <"الجلد/ البشرة">
@@ -530,7 +485,7 @@ ontology
 				>
 				["at0059"] = <
 					text = <"الجهيزة">
-					description = <"*Details about the device used to measure body temperature. (en)">
+					description = <"تفاصيل حول الجهيزة المستخدمة لقياس درجة حرارة الجسم">
 				>
 				["at0060"] = <
 					text = <"*Tinning(en)">
@@ -542,8 +497,8 @@ ontology
 				>
 				["at0062"] = <
 					text = <"*Extension(en)">
-					description = <"*Additional information required to extend the model with local content or to align with other reference models or formalisms. (en)">
-					comment = <"*For example: local information requirements; or additional metadata to align with FHIR. (en)">
+					description = <"*Additional information required to capture local content or to align with other reference models/formalisms.(en)">
+					comment = <"*e.g. Local information requirements or additional metadata to align with FHIR or CIMI equivalents.(en)">
 				>
 				["at0063"] = <
 					text = <"*Comment(en)">
@@ -551,16 +506,11 @@ ontology
 				>
 				["at0064"] = <
 					text = <"*Structured measurement location(en)">
-					description = <"*Structured details about the location of measurement. (en)">
+					description = <"*Structured anatomical location of where the measurement was taken.(en)">
 				>
 				["at0065"] = <
-					text = <"*Day of menstrual cycle(en)">
-					description = <"*Current day of the menstrual cycle.(en)">
-					comment = <"*The first day of menstruation is considered to be Day 1 of each menstrual cycle. (en)">
-				>
-				["at0066"] = <
-					text = <"*DV_TEXT (en)">
-					description = <"*Additional issues or factors that may impact on the measurement of body temperature, not captured in other fields. (en)">
+					text = <"*Current day of menstrual cycle(en)">
+					description = <"*Number of days since onset of last normal menstrual period.(en)">
 				>
 			>
 		>
@@ -584,7 +534,7 @@ ontology
 				>
 				["at0004"] = <
 					text = <"Температура(ru)">
-					description = <"*The measured temperature. (en)">
+					description = <"Измеряется температура тела (как суррогат для всего тела).">
 				>
 				["at0020"] = <
 					text = <"*Protocol(en)">
@@ -592,7 +542,7 @@ ontology
 				>
 				["at0021"] = <
 					text = <"*Location of measurement(en)">
-					description = <"*Simple description about the site of measurement. (en)">
+					description = <"*The anatomical site of measurement of the temperature.(en)">
 				>
 				["at0022"] = <
 					text = <"Рот">
@@ -648,7 +598,7 @@ ontology
 				>
 				["at0041"] = <
 					text = <"Тепловой стресс">
-					description = <"*Narrative description of the conditions applied to the subject that might influence their measured body temperature. (en)">
+					description = <"Описание особенностей, которые могут повлиять на результат измерения температуры тела.">
 				>
 				["at0043"] = <
 					text = <"Кожа">
@@ -676,7 +626,7 @@ ontology
 				>
 				["at0059"] = <
 					text = <"Устройство">
-					description = <"*Details about the device used to measure body temperature. (en)">
+					description = <"Информация об устройстве, используемом для измерения температуры тела.">
 				>
 				["at0060"] = <
 					text = <"*Tinning(en)">
@@ -688,8 +638,8 @@ ontology
 				>
 				["at0062"] = <
 					text = <"*Extension(en)">
-					description = <"*Additional information required to extend the model with local content or to align with other reference models or formalisms. (en)">
-					comment = <"*For example: local information requirements; or additional metadata to align with FHIR. (en)">
+					description = <"*Additional information required to capture local content or to align with other reference models/formalisms.(en)">
+					comment = <"*e.g. Local information requirements or additional metadata to align with FHIR or CIMI equivalents.(en)">
 				>
 				["at0063"] = <
 					text = <"*Comment(en)">
@@ -697,16 +647,11 @@ ontology
 				>
 				["at0064"] = <
 					text = <"*Structured measurement location(en)">
-					description = <"*Structured details about the location of measurement. (en)">
+					description = <"*Structured anatomical location of where the measurement was taken.(en)">
 				>
 				["at0065"] = <
-					text = <"*Day of menstrual cycle(en)">
-					description = <"*Current day of the menstrual cycle.(en)">
-					comment = <"*The first day of menstruation is considered to be Day 1 of each menstrual cycle. (en)">
-				>
-				["at0066"] = <
-					text = <"*DV_TEXT (en)">
-					description = <"*Additional issues or factors that may impact on the measurement of body temperature, not captured in other fields. (en)">
+					text = <"*Current day of menstrual cycle(en)">
+					description = <"*Number of days since onset of last normal menstrual period.(en)">
 				>
 			>
 		>
@@ -730,7 +675,7 @@ ontology
 				>
 				["at0004"] = <
 					text = <"Temperatur">
-					description = <"*The measured temperature. (en)">
+					description = <"Målt kroppstemperatur som uttrykk for kjernetemperatur.">
 				>
 				["at0020"] = <
 					text = <"*Protocol(en)">
@@ -738,7 +683,7 @@ ontology
 				>
 				["at0021"] = <
 					text = <"Målested">
-					description = <"*Simple description about the site of measurement. (en)">
+					description = <"Det anatomiske målestedet for måling av temperatur.">
 				>
 				["at0022"] = <
 					text = <"Munn">
@@ -794,7 +739,7 @@ ontology
 				>
 				["at0041"] = <
 					text = <"Aktiv temperaturpåvirkning">
-					description = <"*Narrative description of the conditions applied to the subject that might influence their measured body temperature. (en)">
+					description = <"Beskrivelse av aktive tiltak som påvirker den målte kroppstemperaturen, f.eks. bruk av varmeteppe, kalde omslag, isbad eller hjerte/lungemaskin ved oppvarming av hypotermiske pasienter.">
 				>
 				["at0043"] = <
 					text = <"Hud">
@@ -822,7 +767,7 @@ ontology
 				>
 				["at0059"] = <
 					text = <"Måleinstrument">
-					description = <"*Details about the device used to measure body temperature. (en)">
+					description = <"Detaljer om måleinstrumentet som ble brukt til å måle temperaturen.">
 				>
 				["at0060"] = <
 					text = <"Tinning">
@@ -834,8 +779,8 @@ ontology
 				>
 				["at0062"] = <
 					text = <"Tilleggsinformasjon">
-					description = <"*Additional information required to extend the model with local content or to align with other reference models or formalisms. (en)">
-					comment = <"*For example: local information requirements; or additional metadata to align with FHIR. (en)">
+					description = <"Ytterligere informasjon som trengs for å kunne registrere lokalt definert innhold eller for å tilpasse til andre referansemodeller/formalismer.">
+					comment = <"For eksempel lokale informasjonsbehov eller ytterligere metadata for å kunne tilpasse til tilsvarende konsepter i FHIR eller CIMI.">
 				>
 				["at0063"] = <
 					text = <"Kommentar">
@@ -843,16 +788,11 @@ ontology
 				>
 				["at0064"] = <
 					text = <"Strukturert målested">
-					description = <"*Structured details about the location of measurement. (en)">
+					description = <"Strukturert anatomisk lokalisering der målingen ble utført.">
 				>
 				["at0065"] = <
 					text = <"Menstruasjonssyklusdag">
-					description = <"*Current day of the menstrual cycle.(en)">
-					comment = <"*The first day of menstruation is considered to be Day 1 of each menstrual cycle. (en)">
-				>
-				["at0066"] = <
-					text = <"*DV_TEXT (en)">
-					description = <"*Additional issues or factors that may impact on the measurement of body temperature, not captured in other fields. (en)">
+					description = <"Antall dager siden forrige normale menstruasjon startet.">
 				>
 			>
 		>
@@ -876,7 +816,7 @@ ontology
 				>
 				["at0004"] = <
 					text = <"Temperatura">
-					description = <"*The measured temperature. (en)">
+					description = <"La temperatura corporal medida (representa la temperatura de todo el cuerpo).">
 				>
 				["at0020"] = <
 					text = <"*Protocol(en)">
@@ -884,7 +824,7 @@ ontology
 				>
 				["at0021"] = <
 					text = <"*Location of measurement(en)">
-					description = <"*Simple description about the site of measurement. (en)">
+					description = <"*The anatomical site of measurement of the temperature.(en)">
 				>
 				["at0022"] = <
 					text = <"Boca">
@@ -940,7 +880,7 @@ ontology
 				>
 				["at0041"] = <
 					text = <"Descripción de estrés térmico">
-					description = <"*Narrative description of the conditions applied to the subject that might influence their measured body temperature. (en)">
+					description = <"Descripción de las condiciones que le suceden al sujeto que puede influenciar la temperatura corporal medida.">
 				>
 				["at0043"] = <
 					text = <"Piel">
@@ -968,7 +908,7 @@ ontology
 				>
 				["at0059"] = <
 					text = <"Dispositivo">
-					description = <"*Details about the device used to measure body temperature. (en)">
+					description = <"Detalles sobre el dispositivo usado para medir la temperatura corporal.">
 				>
 				["at0060"] = <
 					text = <"*Tinning(en)">
@@ -980,8 +920,8 @@ ontology
 				>
 				["at0062"] = <
 					text = <"*Extension(en)">
-					description = <"*Additional information required to extend the model with local content or to align with other reference models or formalisms. (en)">
-					comment = <"*For example: local information requirements; or additional metadata to align with FHIR. (en)">
+					description = <"*Additional information required to capture local content or to align with other reference models/formalisms.(en)">
+					comment = <"*e.g. Local information requirements or additional metadata to align with FHIR or CIMI equivalents.(en)">
 				>
 				["at0063"] = <
 					text = <"*Comment(en)">
@@ -989,16 +929,11 @@ ontology
 				>
 				["at0064"] = <
 					text = <"*Structured measurement location(en)">
-					description = <"*Structured details about the location of measurement. (en)">
+					description = <"*Structured anatomical location of where the measurement was taken.(en)">
 				>
 				["at0065"] = <
-					text = <"Día del ciclo menstrual">
-					description = <"*Current day of the menstrual cycle.(en)">
-					comment = <"*The first day of menstruation is considered to be Day 1 of each menstrual cycle. (en)">
-				>
-				["at0066"] = <
-					text = <"*DV_TEXT (en)">
-					description = <"*Additional issues or factors that may impact on the measurement of body temperature, not captured in other fields. (en)">
+					text = <"*Current day of menstrual cycle(en)">
+					description = <"*Number of days since onset of last normal menstrual period.(en)">
 				>
 			>
 		>
@@ -1022,7 +957,7 @@ ontology
 				>
 				["at0004"] = <
 					text = <"دما">
-					description = <"*The measured temperature. (en)">
+					description = <"دمای اندازه گیری شده از بدن (به عنوان جایگزینی برای کل بدن)٬">
 				>
 				["at0020"] = <
 					text = <"*Protocol(en)">
@@ -1030,7 +965,7 @@ ontology
 				>
 				["at0021"] = <
 					text = <"*Location of measurement(en)">
-					description = <"*Simple description about the site of measurement. (en)">
+					description = <"*The anatomical site of measurement of the temperature.(en)">
 				>
 				["at0022"] = <
 					text = <"ماه">
@@ -1087,7 +1022,7 @@ ontology
 				>
 				["at0041"] = <
 					text = <"توصیف استرسهای گرمایی">
-					description = <"*Narrative description of the conditions applied to the subject that might influence their measured body temperature. (en)">
+					description = <"توصیف شرایط اعمال شده به شخص که ممکن است اندازه گیری دمای بدن فرد را تحت تاثیر قرار دهد">
 				>
 				["at0043"] = <
 					text = <"پوست">
@@ -1115,7 +1050,7 @@ ontology
 				>
 				["at0059"] = <
 					text = <"تجهیز">
-					description = <"*Details about the device used to measure body temperature. (en)">
+					description = <"جزییاتی در موردتجهیزات استفاده شده در اندازه گیری دمای بدن">
 				>
 				["at0060"] = <
 					text = <"*Tinning(en)">
@@ -1127,8 +1062,8 @@ ontology
 				>
 				["at0062"] = <
 					text = <"*Extension(en)">
-					description = <"*Additional information required to extend the model with local content or to align with other reference models or formalisms. (en)">
-					comment = <"*For example: local information requirements; or additional metadata to align with FHIR. (en)">
+					description = <"*Additional information required to capture local content or to align with other reference models/formalisms.(en)">
+					comment = <"*e.g. Local information requirements or additional metadata to align with FHIR or CIMI equivalents.(en)">
 				>
 				["at0063"] = <
 					text = <"*Comment(en)">
@@ -1136,16 +1071,11 @@ ontology
 				>
 				["at0064"] = <
 					text = <"*Structured measurement location(en)">
-					description = <"*Structured details about the location of measurement. (en)">
+					description = <"*Structured anatomical location of where the measurement was taken.(en)">
 				>
 				["at0065"] = <
-					text = <"*Day of menstrual cycle(en)">
-					description = <"*Current day of the menstrual cycle.(en)">
-					comment = <"*The first day of menstruation is considered to be Day 1 of each menstrual cycle. (en)">
-				>
-				["at0066"] = <
-					text = <"*DV_TEXT (en)">
-					description = <"*Additional issues or factors that may impact on the measurement of body temperature, not captured in other fields. (en)">
+					text = <"*Current day of menstrual cycle(en)">
+					description = <"*Number of days since onset of last normal menstrual period.(en)">
 				>
 			>
 		>
@@ -1153,7 +1083,7 @@ ontology
 			items = <
 				["at0000"] = <
 					text = <"Temperatura Corporal">
-					description = <"Registrar a temperatura aferida de uma pessoa - substituto para temperatura corporal central.">
+					description = <"O valor para a temperatura corporal, com valor médio equivalente para o corpo inteiro.">
 				>
 				["at0001"] = <
 					text = <"Single">
@@ -1164,32 +1094,32 @@ ontology
 					description = <"@ internal @">
 				>
 				["at0003"] = <
-					text = <"Qualquer evento">
-					description = <"Padrão, ponto indeterminado no tempo ou evento intervalar que pode ser explicitamente definido em um template ou em tempo de execução.">
+					text = <"*Any event(en)">
+					description = <"*Default, unspecified point in time or interval event which may be explicitly defined in a template or at run-time.(en)">
 				>
 				["at0004"] = <
 					text = <"Temperatura">
-					description = <"*The measured temperature. (en)">
+					description = <"A temperatura corporal aferida (média para o corpo inteiro).">
 				>
 				["at0020"] = <
 					text = <"Protocol">
 					description = <"@ internal @">
 				>
 				["at0021"] = <
-					text = <"Local de aferição">
-					description = <"*Simple description about the site of measurement. (en)">
+					text = <"*Location of measurement(en)">
+					description = <"*The anatomical site of measurement of the temperature.(en)">
 				>
 				["at0022"] = <
 					text = <"Boca">
-					description = <"A temperatura é aferida no interior da boca.">
+					description = <"A temperatura é eferida no interior da boca.">
 				>
 				["at0023"] = <
 					text = <"Canal auditivo">
-					description = <"A temperatura é aferida no canal auditivo externo.">
+					description = <"A temperatura é aferida dentro do canal auditivo do ouvido externo (conduto auditivo).">
 				>
 				["at0024"] = <
 					text = <"Axilla">
-					description = <"A temperatura é aferida na pele da axila com o braço posicionado ao lado do corpo.">
+					description = <"A temperatura é aferida na pele da axila com o braço abaixado.">
 				>
 				["at0025"] = <
 					text = <"Reto">
@@ -1197,7 +1127,7 @@ ontology
 				>
 				["at0026"] = <
 					text = <"Nasofaringe">
-					description = <"A temperatura é aferida dentro da nasofaringe.">
+					description = <"A temperatura é aferida na parte nasal da faringe.">
 				>
 				["at0027"] = <
 					text = <"Bexiga">
@@ -1213,27 +1143,27 @@ ontology
 				>
 				["at0030"] = <
 					text = <"Exposição do corpo">
-					description = <"O grau de exposição do indivíduo no momento da medição.">
+					description = <"A situação térmica da pessoa que tem a sua temperatura aferida.">
 				>
 				["at0031"] = <
 					text = <"Despido">
 					description = <"Sem roupas, camisola ou capa.">
 				>
 				["at0032"] = <
-					text = <"Vestuário reduzido">
-					description = <"A pessoa está vestida com quantidade de roupa ou lençóis menor do que a apropriada para as circunstâncias ambientais.">
+					text = <"Vestuário reduzido/camisola">
+					description = <"A pessoa está vestida por pouca roupa ou camisola considerado o vestuário necessário para as circunstâncias ambientais.">
 				>
 				["at0033"] = <
 					text = <"Apropriadamente vestido">
-					description = <"A pessoa está coberta por uma quantidade de roupa ou lençóis considerada apropriada para as circunstâncias ambientais.">
+					description = <"A pessoa está vestida apropriadamente considerado o vestuário necessário para as circunstâncias ambientais.">
 				>
 				["at0034"] = <
 					text = <"Excessivamente vestido">
-					description = <"A pessoa está coberta por uma quantidade de roupas ou lençóis maior do que a apropriada para as circunstâncias ambientais.">
+					description = <"A pessoa está excessivamente vestida considerado o vestuário necessário para as circunstâncias ambientais.">
 				>
 				["at0041"] = <
-					text = <"Descrição de estresse térmico">
-					description = <"*Narrative description of the conditions applied to the subject that might influence their measured body temperature. (en)">
+					text = <"Choque térmico">
+					description = <"Descrição das condições aplicadas ao sujeito que possa influenciar a medida de sua temperatura corporal.">
 				>
 				["at0043"] = <
 					text = <"Pele">
@@ -1241,19 +1171,19 @@ ontology
 				>
 				["at0051"] = <
 					text = <"Vagina">
-					description = <"A temperatura é aferida no interior da vagina.">
+					description = <"A temperatura é afereida no interior da vagina.">
 				>
 				["at0054"] = <
-					text = <"Esôfago">
-					description = <"A temperatura é aferida no esôfago.">
+					text = <"Esófago">
+					description = <"A temperatura é aferida no esófago.">
 				>
 				["at0055"] = <
-					text = <"Região inguinal">
-					description = <"A temperatura é medida no sulco inguinal da pele entre a perna e a parede abdominal.">
+					text = <"Região Inguinal">
+					description = <"A temperatura é aferida na dobra da pele entre a região inguinal e a região abdominal.">
 				>
 				["at0056"] = <
-					text = <"Condições ambientais">
-					description = <"Detalhes sobre as condições ambientais no momento da aferição de temperatura.">
+					text = <"*Environmental conditions(en)">
+					description = <"*Details about the environmental conditions at the time of temperature measurement.(en)">
 				>
 				["at0057"] = <
 					text = <"Esforço">
@@ -1261,37 +1191,32 @@ ontology
 				>
 				["at0059"] = <
 					text = <"Dispositivo">
-					description = <"*Details about the device used to measure body temperature. (en)">
+					description = <"Detalhes sobre o dispositivo utilizado para medir a temperatura corporal.">
 				>
 				["at0060"] = <
-					text = <"Têmpora">
-					description = <"A temperatura é medida na têmpora, sobre a artéria temporal superficial.">
+					text = <"*Tinning(en)">
+					description = <"*Temperatur målt i tinningen over arteria temporalis.(en)">
 				>
 				["at0061"] = <
-					text = <"Testa">
-					description = <"A temperatura é aferida na testa.">
+					text = <"*Panne(en)">
+					description = <"*Temperatur målt i pannen.(en)">
 				>
 				["at0062"] = <
-					text = <"Extensão">
-					description = <"*Additional information required to extend the model with local content or to align with other reference models or formalisms. (en)">
-					comment = <"*For example: local information requirements; or additional metadata to align with FHIR. (en)">
+					text = <"*Extension(en)">
+					description = <"*Additional information required to capture local content or to align with other reference models/formalisms.(en)">
+					comment = <"*e.g. Local information requirements or additional metadata to align with FHIR or CIMI equivalents.(en)">
 				>
 				["at0063"] = <
-					text = <"Comentário">
-					description = <"Comentário adicional sobre a aferição de temperatura não capturado em outros campos.">
+					text = <"*Comment(en)">
+					description = <"*Additional comment about the body temperature measurement not captured in other fields.(en)">
 				>
 				["at0064"] = <
-					text = <"Localização estruturada de aferição">
-					description = <"*Structured details about the location of measurement. (en)">
+					text = <"*Structured measurement location(en)">
+					description = <"*Structured anatomical location of where the measurement was taken.(en)">
 				>
 				["at0065"] = <
-					text = <"Dia do ciclo menstrual">
-					description = <"*Current day of the menstrual cycle.(en)">
-					comment = <"*The first day of menstruation is considered to be Day 1 of each menstrual cycle. (en)">
-				>
-				["at0066"] = <
-					text = <"*DV_TEXT (en)">
-					description = <"*Additional issues or factors that may impact on the measurement of body temperature, not captured in other fields. (en)">
+					text = <"*Current day of menstrual cycle(en)">
+					description = <"*Number of days since onset of last normal menstrual period.(en)">
 				>
 			>
 		>
@@ -1315,7 +1240,7 @@ ontology
 				>
 				["at0004"] = <
 					text = <"Temperature">
-					description = <"The measured temperature.">
+					description = <"The measured body temperature (as a surrogate for the core of the body).">
 				>
 				["at0020"] = <
 					text = <"Protocol">
@@ -1323,7 +1248,7 @@ ontology
 				>
 				["at0021"] = <
 					text = <"Location of measurement">
-					description = <"Simple description about the site of measurement.">
+					description = <"The anatomical site of measurement of the temperature.">
 				>
 				["at0022"] = <
 					text = <"Mouth">
@@ -1379,7 +1304,7 @@ ontology
 				>
 				["at0041"] = <
 					text = <"Description of thermal stress">
-					description = <"Narrative description of the conditions applied to the subject that might influence their measured body temperature.">
+					description = <"Description of the conditions applied to the subject that might influence their measured body temperature.">
 				>
 				["at0043"] = <
 					text = <"Skin">
@@ -1407,7 +1332,7 @@ ontology
 				>
 				["at0059"] = <
 					text = <"Device">
-					description = <"Details about the device used to measure body temperature.">
+					description = <"Details about the device use to measure body temperature.">
 				>
 				["at0060"] = <
 					text = <"Temple">
@@ -1419,8 +1344,8 @@ ontology
 				>
 				["at0062"] = <
 					text = <"Extension">
-					description = <"Additional information required to extend the model with local content or to align with other reference models or formalisms.">
-					comment = <"For example: local information requirements; or additional metadata to align with FHIR.">
+					description = <"Additional information required to capture local content or to align with other reference models/formalisms.">
+					comment = <"e.g. Local information requirements or additional metadata to align with FHIR or CIMI equivalents.">
 				>
 				["at0063"] = <
 					text = <"Comment">
@@ -1428,16 +1353,11 @@ ontology
 				>
 				["at0064"] = <
 					text = <"Structured measurement location">
-					description = <"Structured details about the location of measurement.">
+					description = <"Structured anatomical location of where the measurement was taken.">
 				>
 				["at0065"] = <
-					text = <"Day of menstrual cycle">
-					description = <"Current day of the menstrual cycle.">
-					comment = <"The first day of menstruation is considered to be Day 1 of each menstrual cycle.">
-				>
-				["at0066"] = <
-					text = <"Confounding factors">
-					description = <"Additional issues or factors that may impact on the measurement of body temperature, not captured in other fields.">
+					text = <"Current day of menstrual cycle">
+					description = <"Number of days since onset of last normal menstrual period.">
 				>
 			>
 		>
@@ -1461,7 +1381,7 @@ ontology
 				>
 				["at0004"] = <
 					text = <"Temperatur">
-					description = <"*The measured temperature. (en)">
+					description = <"Die gemessene Körpertemperatur (als Surrogat für den gesamten Körper).">
 				>
 				["at0020"] = <
 					text = <"Protocol">
@@ -1469,7 +1389,7 @@ ontology
 				>
 				["at0021"] = <
 					text = <"*Location of measurement(en)">
-					description = <"*Simple description about the site of measurement. (en)">
+					description = <"*The anatomical site of measurement of the temperature.(en)">
 				>
 				["at0022"] = <
 					text = <"Mund">
@@ -1525,7 +1445,7 @@ ontology
 				>
 				["at0041"] = <
 					text = <"Beschreibung der Wärmebelastung">
-					description = <"*Narrative description of the conditions applied to the subject that might influence their measured body temperature. (en)">
+					description = <"Beschreibung von Bedingungen, denen die Person ausgesetzt ist, welche die gemessene Körpertemperatur beeinflussen könnten.">
 				>
 				["at0043"] = <
 					text = <"Haut">
@@ -1553,7 +1473,7 @@ ontology
 				>
 				["at0059"] = <
 					text = <"Gerät">
-					description = <"*Details about the device used to measure body temperature. (en)">
+					description = <"Details über das Gerät, das zur Temperaturmessung benutzt wurde.">
 				>
 				["at0060"] = <
 					text = <"*Tinning(en)">
@@ -1565,8 +1485,8 @@ ontology
 				>
 				["at0062"] = <
 					text = <"*Extension(en)">
-					description = <"*Additional information required to extend the model with local content or to align with other reference models or formalisms. (en)">
-					comment = <"*For example: local information requirements; or additional metadata to align with FHIR. (en)">
+					description = <"*Additional information required to capture local content or to align with other reference models/formalisms.(en)">
+					comment = <"*e.g. Local information requirements or additional metadata to align with FHIR or CIMI equivalents.(en)">
 				>
 				["at0063"] = <
 					text = <"*Comment(en)">
@@ -1574,16 +1494,11 @@ ontology
 				>
 				["at0064"] = <
 					text = <"*Structured measurement location(en)">
-					description = <"*Structured details about the location of measurement. (en)">
+					description = <"*Structured anatomical location of where the measurement was taken.(en)">
 				>
 				["at0065"] = <
-					text = <"Tag des Menstruationszyklus">
-					description = <"*Current day of the menstrual cycle.(en)">
-					comment = <"*The first day of menstruation is considered to be Day 1 of each menstrual cycle. (en)">
-				>
-				["at0066"] = <
-					text = <"*Confounding factors(en)">
-					description = <"*Additional issues or factors that may impact on the measurement of body temperature, not captured in other fields. (en)">
+					text = <"*Current day of menstrual cycle(en)">
+					description = <"*Number of days since onset of last normal menstrual period.(en)">
 				>
 			>
 		>
@@ -1607,7 +1522,7 @@ ontology
 				>
 				["at0004"] = <
 					text = <"Temperatura">
-					description = <"*The measured temperature. (en)">
+					description = <"La temperatura corporal medida (representa la temperatura de todo el cuerpo).">
 				>
 				["at0020"] = <
 					text = <"*Protocol(en)">
@@ -1615,7 +1530,7 @@ ontology
 				>
 				["at0021"] = <
 					text = <"*Location of measurement(en)">
-					description = <"*Simple description about the site of measurement. (en)">
+					description = <"*The anatomical site of measurement of the temperature.(en)">
 				>
 				["at0022"] = <
 					text = <"Boca">
@@ -1671,7 +1586,7 @@ ontology
 				>
 				["at0041"] = <
 					text = <"Descripción de estrés térmico">
-					description = <"*Narrative description of the conditions applied to the subject that might influence their measured body temperature. (en)">
+					description = <"Descripción de las condiciones que le suceden al sujeto que puede influenciar la temperatura corporal medida.">
 				>
 				["at0043"] = <
 					text = <"Piel">
@@ -1699,7 +1614,7 @@ ontology
 				>
 				["at0059"] = <
 					text = <"Dispositivo">
-					description = <"*Details about the device used to measure body temperature. (en)">
+					description = <"Detalles sobre el dispositivo usado para medir la temperatura corporal.">
 				>
 				["at0060"] = <
 					text = <"*Tinning(en)">
@@ -1711,8 +1626,8 @@ ontology
 				>
 				["at0062"] = <
 					text = <"*Extension(en)">
-					description = <"*Additional information required to extend the model with local content or to align with other reference models or formalisms. (en)">
-					comment = <"*For example: local information requirements; or additional metadata to align with FHIR. (en)">
+					description = <"*Additional information required to capture local content or to align with other reference models/formalisms.(en)">
+					comment = <"*e.g. Local information requirements or additional metadata to align with FHIR or CIMI equivalents.(en)">
 				>
 				["at0063"] = <
 					text = <"*Comment(en)">
@@ -1720,16 +1635,11 @@ ontology
 				>
 				["at0064"] = <
 					text = <"*Structured measurement location(en)">
-					description = <"*Structured details about the location of measurement. (en)">
+					description = <"*Structured anatomical location of where the measurement was taken.(en)">
 				>
 				["at0065"] = <
-					text = <"Día del ciclo menstrual">
-					description = <"*Current day of the menstrual cycle.(en)">
-					comment = <"*The first day of menstruation is considered to be Day 1 of each menstrual cycle. (en)">
-				>
-				["at0066"] = <
-					text = <"*Confounding factors(en)">
-					description = <"*Additional issues or factors that may impact on the measurement of body temperature, not captured in other fields. (en)">
+					text = <"*Current day of menstrual cycle(en)">
+					description = <"*Number of days since onset of last normal menstrual period.(en)">
 				>
 			>
 		>
@@ -1753,7 +1663,7 @@ ontology
 				>
 				["at0004"] = <
 					text = <"Temperatur">
-					description = <"*The measured temperature. (en)">
+					description = <"Den uppmätta kroppstemperaturen (som ett surrogat för kroppens kärntemperatur).">
 				>
 				["at0020"] = <
 					text = <"Protocol">
@@ -1761,7 +1671,7 @@ ontology
 				>
 				["at0021"] = <
 					text = <"Mätplats">
-					description = <"*Simple description about the site of measurement. (en)">
+					description = <"Den anatomiska platsen för temperaturmätning.">
 				>
 				["at0022"] = <
 					text = <"Mun">
@@ -1817,7 +1727,7 @@ ontology
 				>
 				["at0041"] = <
 					text = <"Beskrivning av termisk stress">
-					description = <"*Narrative description of the conditions applied to the subject that might influence their measured body temperature. (en)">
+					description = <"Beskrivning av rådande förhållanden som kan påverka individens uppmätta kroppstemperatur.">
 				>
 				["at0043"] = <
 					text = <"Hud">
@@ -1845,7 +1755,7 @@ ontology
 				>
 				["at0059"] = <
 					text = <"Utrustning">
-					description = <"*Details about the device used to measure body temperature. (en)">
+					description = <"Information om utrustningen som används för att mäta kroppstemperatur.">
 				>
 				["at0060"] = <
 					text = <"Tinning">
@@ -1857,8 +1767,8 @@ ontology
 				>
 				["at0062"] = <
 					text = <"Extra information">
-					description = <"*Additional information required to extend the model with local content or to align with other reference models or formalisms. (en)">
-					comment = <"*For example: local information requirements; or additional metadata to align with FHIR. (en)">
+					description = <"Extra information som krävs för att fånga lokalt innehåll eller som anpassning till andra referensmodeller eller formalismer.">
+					comment = <"Exempelvis: lokala informationskrav eller ytterligare metadata för anpassning till FHIR- eller CIMI motsvarigheter.">
 				>
 				["at0063"] = <
 					text = <"Kommentar">
@@ -1866,16 +1776,11 @@ ontology
 				>
 				["at0064"] = <
 					text = <"Strukturerad mätplats">
-					description = <"*Structured details about the location of measurement. (en)">
+					description = <"Strukturerad anatomisk plats där mätningen gjordes.">
 				>
 				["at0065"] = <
-					text = <"Dag i menstruationscykeln">
-					description = <"*Current day of the menstrual cycle.(en)">
-					comment = <"*The first day of menstruation is considered to be Day 1 of each menstrual cycle. (en)">
-				>
-				["at0066"] = <
-					text = <"*Confounding factors(en)">
-					description = <"*Additional issues or factors that may impact on the measurement of body temperature, not captured in other fields. (en)">
+					text = <"Aktuell dag i menstruationscykeln">
+					description = <"Antal dagar sedan den senaste normala menstruationsperiodens start.">
 				>
 			>
 		>
@@ -1899,7 +1804,7 @@ ontology
 				>
 				["at0004"] = <
 					text = <"温度">
-					description = <"*The measured temperature. (en)">
+					description = <"計測された体温（全身の代理として）">
 				>
 				["at0020"] = <
 					text = <"Protocol">
@@ -1907,7 +1812,7 @@ ontology
 				>
 				["at0021"] = <
 					text = <"計測部位">
-					description = <"*Simple description about the site of measurement. (en)">
+					description = <"体温を計測した解剖学的な部位。">
 				>
 				["at0022"] = <
 					text = <"口腔">
@@ -1963,7 +1868,7 @@ ontology
 				>
 				["at0041"] = <
 					text = <"熱応力についての記載">
-					description = <"*Narrative description of the conditions applied to the subject that might influence their measured body temperature. (en)">
+					description = <"体温計測に影響を起こしうる対象についてかせられた条件についての記載。">
 				>
 				["at0043"] = <
 					text = <"皮膚">
@@ -1991,7 +1896,7 @@ ontology
 				>
 				["at0059"] = <
 					text = <"機器">
-					description = <"*Details about the device used to measure body temperature. (en)">
+					description = <"体温測定に使用された機器についての詳細">
 				>
 				["at0060"] = <
 					text = <"*Temple(en)">
@@ -2003,8 +1908,7 @@ ontology
 				>
 				["at0062"] = <
 					text = <"*Extension(en)">
-					description = <"*Additional information required to extend the model with local content or to align with other reference models or formalisms. (en)">
-					comment = <"*For example: local information requirements; or additional metadata to align with FHIR. (en)">
+					description = <"*Additional information required to capture local content or to align with other reference models/formalisms.(en)">
 				>
 				["at0063"] = <
 					text = <"*Comment(en)">
@@ -2012,308 +1916,11 @@ ontology
 				>
 				["at0064"] = <
 					text = <"*Structured measurement location(en)">
-					description = <"*Structured details about the location of measurement. (en)">
+					description = <"*Structured anatomical location of where the measurement was taken.(en)">
 				>
 				["at0065"] = <
-					text = <"月経周期の日">
-					description = <"*Current day of the menstrual cycle.(en)">
-					comment = <"*The first day of menstruation is considered to be Day 1 of each menstrual cycle. (en)">
-				>
-				["at0066"] = <
-					text = <"*Confounding factors(en)">
-					description = <"*Additional issues or factors that may impact on the measurement of body temperature, not captured in other fields. (en)">
-				>
-			>
-		>
-		["fi"] = <
-			items = <
-				["at0000"] = <
-					text = <"Ruumiinlämpö">
-					description = <"Ruumiin lämpötilan mittaus, joka toimii korvikkeena henkilön ydinlämpötilalle.">
-				>
-				["at0001"] = <
-					text = <"Tree">
-					description = <"@ internal @">
-				>
-				["at0002"] = <
-					text = <"History">
-					description = <"@ internal @">
-				>
-				["at0003"] = <
-					text = <"Mikä tahansa tapahtuma">
-					description = <"Oletusarvoinen, määrittämättömänä ajanhetkenä tai ajanjaksolla ilmenevä tapahtuma, joka voi olla määritetty tarkasti jossakin mallissa tai suorituksen aikana.">
-				>
-				["at0004"] = <
-					text = <"Ruumiinlämpö">
-					description = <"*The measured temperature. (en)">
-				>
-				["at0020"] = <
-					text = <"Protocol">
-					description = <"@ internal @">
-				>
-				["at0021"] = <
-					text = <"Mittauskohta">
-					description = <"*Simple description about the site of measurement. (en)">
-				>
-				["at0022"] = <
-					text = <"Suu">
-					description = <"Ruumiinlämpö mitataan suusta.">
-				>
-				["at0023"] = <
-					text = <"Korvakäytävästä">
-					description = <"Ruumiinlämpö mitataan korvakäytävästä.">
-				>
-				["at0024"] = <
-					text = <"Kainalo">
-					description = <"Ruumiinlämpö mitataan kainalon iholta käsivarren ollessa kyljen myötäisesti.">
-				>
-				["at0025"] = <
-					text = <"Peräsuoli">
-					description = <"Ruumiinlämpö mitataan peräsuolesta.">
-				>
-				["at0026"] = <
-					text = <"Nenänielu">
-					description = <"Ruumiinlämpö mitataan nenänielusta.">
-				>
-				["at0027"] = <
-					text = <"Virtsarakko">
-					description = <"Ruumiinlämpö mitataan virtsarakosta.">
-				>
-				["at0028"] = <
-					text = <"Suonensisäinen">
-					description = <"Ruumiinlämpö mitataan suonensisäisesti.">
-				>
-				["at0029"] = <
-					text = <"Tila">
-					description = <"Tieto potilaan tilasta.">
-				>
-				["at0030"] = <
-					text = <"Kehon paljaus">
-					description = <"Henkilön kehon paljaus mittaushetkellä.">
-				>
-				["at0031"] = <
-					text = <"Alaston">
-					description = <"Ei vaatteita, vuodevaatteita eikä peittoja.">
-				>
-				["at0032"] = <
-					text = <"Tavallista vähemmän vaatteita/vuodevaatteita">
-					description = <"Henkilöllä on päällään vähemmän vaatteita tai vuodevaatteita, kuin ympäristöolosuhteisiin nähden olisi suotavaa.">
-				>
-				["at0033"] = <
-					text = <"Asianmukaisesti vaatteita/vuodevaatteita">
-					description = <"Henkilöllä on päällään ympäristöolosuhteisiin nähden asianmukaisesti vaatteita tai vuodevaatteita.">
-				>
-				["at0034"] = <
-					text = <"Tavallista enemmän vaatteita/vuodevaatteita">
-					description = <"Henkilöllä on päällään enemmän vaatteita tai vuodevaatteita, kuin ympäristöolosuhteisiin nähden olisi suotavaa.">
-				>
-				["at0041"] = <
-					text = <"Lämpöstressin kuvaus">
-					description = <"*Narrative description of the conditions applied to the subject that might influence their measured body temperature. (en)">
-				>
-				["at0043"] = <
-					text = <"Iho">
-					description = <"Lämpötila mitataan paljaalta iholta.">
-				>
-				["at0051"] = <
-					text = <"Emätin">
-					description = <"Ruumiinlämpö mitataan emättimestä.">
-				>
-				["at0054"] = <
-					text = <"Ruokatorvi">
-					description = <"Ruumiinlämpö mitataan ruokatorvesta.">
-				>
-				["at0055"] = <
-					text = <"Nivustaive">
-					description = <"Ruumiinlämpö mitataan jalan ja vatsanpeitteiden välissä olevasta nivuspoimusta.">
-				>
-				["at0056"] = <
-					text = <"Ympäristöolosuhteet">
-					description = <"Tiedot ympäristöolosuhteista ruumiinlämmön mittaushetkellä.">
-				>
-				["at0057"] = <
-					text = <"Rasitus">
-					description = <"Tiedot rasituksesta, jolle henkilö altistuu ruumiinlämmön mittaushetkellä.">
-				>
-				["at0059"] = <
-					text = <"Laite">
-					description = <"*Details about the device used to measure body temperature. (en)">
-				>
-				["at0060"] = <
-					text = <"Ohimo">
-					description = <"Ruumiinlämpö mitataan ohimolta, pinnallisen ohimovaltimon päältä.">
-				>
-				["at0061"] = <
-					text = <"Otsa">
-					description = <"Ruumiinlämpö mitataan otsalta.">
-				>
-				["at0062"] = <
-					text = <"Laajennus">
-					description = <"*Additional information required to extend the model with local content or to align with other reference models or formalisms. (en)">
-					comment = <"*For example: local information requirements; or additional metadata to align with FHIR. (en)">
-				>
-				["at0063"] = <
-					text = <"Kommentti">
-					description = <"Ruumiinlämmön mittauksen kertomusmuodossa olevat lisätiedot, joita ei voida ilmoittaa muissa kentissä.">
-				>
-				["at0064"] = <
-					text = <"Rakenteellinen mittauskohta">
-					description = <"*Structured details about the location of measurement. (en)">
-				>
-				["at0065"] = <
-					text = <"Kuukautiskierron päivä">
-					description = <"*Current day of the menstrual cycle.(en)">
-					comment = <"*The first day of menstruation is considered to be Day 1 of each menstrual cycle. (en)">
-				>
-				["at0066"] = <
-					text = <"*Confounding factors(en)">
-					description = <"*Additional issues or factors that may impact on the measurement of body temperature, not captured in other fields. (en)">
-				>
-			>
-		>
-		["it"] = <
-			items = <
-				["at0000"] = <
-					text = <"Temperatura corporea">
-					description = <"Una misura della temperatura corporea, che è un surrogato della temperatura corporea del corpo centrale dell'individuo. ">
-				>
-				["at0001"] = <
-					text = <"Tree">
-					description = <"@ internal @">
-				>
-				["at0002"] = <
-					text = <"History">
-					description = <"@ internal @">
-				>
-				["at0003"] = <
-					text = <"Qualsiasi evento">
-					description = <"Evento predefinito, non specificato nel tempo o nell'intervallo di tempo, che può essere definito esplicitamente in un modello o in fase di esecuzione.">
-				>
-				["at0004"] = <
-					text = <"Temperatura">
-					description = <"*The measured temperature. (en)">
-				>
-				["at0020"] = <
-					text = <"Protocol">
-					description = <"@ internal @">
-				>
-				["at0021"] = <
-					text = <"Posizione della misura">
-					description = <"*Simple description about the site of measurement. (en)">
-				>
-				["at0022"] = <
-					text = <"Bocca">
-					description = <"La temperatura viene misurata all'interno della bocca.">
-				>
-				["at0023"] = <
-					text = <"Canale uditivo">
-					description = <"La temperatura viene misurata dall'interno del canale uditivo esterno.">
-				>
-				["at0024"] = <
-					text = <"Ascella">
-					description = <"La temperatura viene misurata dalla pelle dell'ascella con il braccio posizionato lateralmente.">
-				>
-				["at0025"] = <
-					text = <"Retto">
-					description = <"Temperatura misurata all'interno del retto. ">
-				>
-				["at0026"] = <
-					text = <"Rinofaringe">
-					description = <"La temperatura viene misurata all'interno del rinofaringe.">
-				>
-				["at0027"] = <
-					text = <"Vescica urinaria">
-					description = <"La temperatura viene misurata nella vescica urinaria.">
-				>
-				["at0028"] = <
-					text = <"Intravascolare">
-					description = <"La temperatura viene misurata all'interno del sistema vascolare.">
-				>
-				["at0029"] = <
-					text = <"Stato">
-					description = <"Informazioni sullo stato del paziente.">
-				>
-				["at0030"] = <
-					text = <"Esposizione corporale">
-					description = <"Il grado di esposizione dell'individuo al momento della misurazione.">
-				>
-				["at0031"] = <
-					text = <"Nudo">
-					description = <"Nessun abbigliamento, biancheria da letto o copertura.">
-				>
-				["at0032"] = <
-					text = <"Abbigliamento/biancheria da letto ridotta">
-					description = <"La persona è coperta da una quantità di indumenti o biancheria da letto inferiore a quella ritenuta appropriata per le circostanze ambientali. ">
-				>
-				["at0033"] = <
-					text = <"Abbigliamento/biancheria da letto appropriata">
-					description = <"La persona è coperta da una quantità di indumenti o biancheria da letto ritenuta adeguata alle circostanze ambientali. ">
-				>
-				["at0034"] = <
-					text = <"Abbigliamento/biancheria da letto maggiorata">
-					description = <"La persona è coperta da una quantità maggiore di indumenti o biancheria da letto rispetto a quanto ritenuto appropriato per le circostanze ambientali.">
-				>
-				["at0041"] = <
-					text = <"Descrizione dello stress termico">
-					description = <"*Narrative description of the conditions applied to the subject that might influence their measured body temperature. (en)">
-				>
-				["at0043"] = <
-					text = <"Pelle">
-					description = <"La temperatura viene misurata dalla pelle esposta.">
-				>
-				["at0051"] = <
-					text = <"Vagina">
-					description = <"La temperatura viene misurata all'interno della vagina.">
-				>
-				["at0054"] = <
-					text = <"Esofago">
-					description = <"La temperatura viene misurata all'interno dell'esofago.">
-				>
-				["at0055"] = <
-					text = <"Piega della pelle inguinale">
-					description = <"La temperatura viene misurata nella piega inguinale della pelle tra la gamba e la parete addominale.">
-				>
-				["at0056"] = <
-					text = <"Condizioni ambientali">
-					description = <"Dettagli sulle condizioni ambientali al momento della misurazione della temperatura.">
-				>
-				["at0057"] = <
-					text = <"Sforzo">
-					description = <"Dettagli sullo sforzo della persona al momento della misurazione della temperatura.">
-				>
-				["at0059"] = <
-					text = <"Dispositivo">
-					description = <"*Details about the device used to measure body temperature. (en)">
-				>
-				["at0060"] = <
-					text = <"Tempie">
-					description = <"La temperatura viene misurata alle tempie, sopra l'arteria temporale superficiale.">
-				>
-				["at0061"] = <
-					text = <"Fronte">
-					description = <"La temperatura viene misurata sulla fronte. ">
-				>
-				["at0062"] = <
-					text = <"Estensione">
-					description = <"*Additional information required to extend the model with local content or to align with other reference models or formalisms. (en)">
-					comment = <"*For example: local information requirements; or additional metadata to align with FHIR. (en)">
-				>
-				["at0063"] = <
-					text = <"Commento">
-					description = <"Commento aggiuntivo sulla misurazione della temperatura corporea non catturato in altri campi.">
-				>
-				["at0064"] = <
-					text = <"Luogo di misura strutturato">
-					description = <"*Structured details about the location of measurement. (en)">
-				>
-				["at0065"] = <
-					text = <"Giorno del ciclo mestruale)">
-					description = <"*Current day of the menstrual cycle.(en)">
-					comment = <"*The first day of menstruation is considered to be Day 1 of each menstrual cycle. (en)">
-				>
-				["at0066"] = <
-					text = <"*Confounding factors(en)">
-					description = <"*Additional issues or factors that may impact on the measurement of body temperature, not captured in other fields. (en)">
+					text = <"月経周期">
+					description = <"女性の月経周期についての詳細">
 				>
 			>
 		>
