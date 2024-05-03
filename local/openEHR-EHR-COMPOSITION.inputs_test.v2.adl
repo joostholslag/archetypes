@@ -1,0 +1,331 @@
+archetype (adl_version=1.4; uid=d7a242bc-e639-4830-ac7b-eb8dc50834d2)
+	openEHR-EHR-COMPOSITION.inputs_test.v2
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::en]>
+
+description
+	original_author = <
+		["date"] = <"2024-04-08">
+	>
+	lifecycle_state = <"unmanaged">
+	details = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+		>
+	>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
+		["custodian_organisation"] = <"openEHR Foundation">
+		["original_namespace"] = <"org.openehr">
+		["original_publisher"] = <"openEHR Foundation">
+		["custodian_namespace"] = <"org.openehr">
+		["MD5-CAM-1.0.1"] = <"cabad18ff7c573314fa1327903a28f60">
+		["build_uid"] = <"55d9351e-bbc3-3212-954d-8e50921826ee">
+	>
+
+definition
+	COMPOSITION[at0000] matches {    -- inputs_test
+		category matches {
+			DV_CODED_TEXT matches {
+				defining_code matches {
+					[openehr::433]
+				}
+			}
+		}
+		context matches {
+			EVENT_CONTEXT matches {*}
+		}
+		content cardinality matches {1..*; unordered} matches {
+			OBSERVATION[at0002] occurrences matches {0..1} matches {    -- inputs test
+				data matches {
+					HISTORY[at0001] matches {    -- History
+						events cardinality matches {1..*; unordered} matches {
+							EVENT[at0003] occurrences matches {0..1} matches {    -- inputs test
+								data matches {
+									ITEM_TREE[at0004] matches {    -- Item tree
+										items cardinality matches {0..*; unordered} matches {
+											ELEMENT[at0006] occurrences matches {0..1} matches {    -- Selection (Blood type)
+												value matches {
+													DV_CODED_TEXT matches {
+														defining_code matches {
+															[local::
+															at0007,    -- A -
+															at0008,    -- A +
+															at0009,    -- B -
+															at0010,    -- B +
+															at0018,    -- AB -
+															at0019,    -- AB +
+															at0020,    -- O -
+															at0021]    -- O +
+														}
+													}
+												}
+											}
+											ELEMENT[at0011] occurrences matches {0..1} matches {    -- Text (Free text)
+												value matches {
+													DV_TEXT matches {*}
+												}
+											}
+											ELEMENT[at0012] occurrences matches {0..1} matches {    -- Quantity (Temperature)
+												value matches {
+													C_DV_QUANTITY <
+														property = <[openehr::127]>
+														list = <
+															["1"] = <
+																units = <"Cel">
+															>
+														>
+													>
+												}
+												name matches {
+													DV_CODED_TEXT matches {*}
+												}
+											}
+											ELEMENT[at0013] occurrences matches {0..1} matches {    -- Proportion (Na:K)
+												value matches {
+													DV_PROPORTION matches {
+														numerator matches {|10.0..50.0|}
+														type matches {0}
+														precision matches {|0|}
+													}
+												}
+											}
+											ELEMENT[at0014] occurrences matches {0..1} matches {    -- Count (Day of menstrual cycle)
+												value matches {
+													DV_COUNT matches {
+														magnitude matches {|0..28|}
+													}
+												}
+												name matches {
+													DV_CODED_TEXT matches {*}
+												}
+											}
+											ELEMENT[at0016] occurrences matches {0..1} matches {    -- Only date
+												value matches {
+													DV_DATE matches {*}
+												}
+											}
+											ELEMENT[at0017] occurrences matches {0..1} matches {    -- Ordinal (Primary Gleason score)
+												value matches {
+													1|[local::at0022],
+													2|[local::at0023],
+													3|[local::at0024],
+													4|[local::at0025],
+													5|[local::at0026]
+												}
+											}
+											ELEMENT[at0027] occurrences matches {0..1} matches {    -- Boolean (Does patient have X)
+												value matches {
+													DV_BOOLEAN matches {*}
+												}
+											}
+											ELEMENT[at0028] occurrences matches {0..1} matches {    -- Duration (Pregnancy)
+												value matches {
+													DV_DURATION matches {
+														value matches {|P0W..P45W|}
+													}
+												}
+											}
+											ELEMENT[at0031] occurrences matches {0..1} matches {    -- Location (Prostate biopsy)
+												value matches {
+													DV_CODED_TEXT matches {
+														defining_code matches {
+															[local::
+															at0032,    -- LLB
+															at0033,    -- LLM
+															at0034,    -- LLA
+															at0035,    -- LMB
+															at0036,    -- LMM
+															at0037,    -- LMA
+															at0038,    -- RMB
+															at0039,    -- RMM
+															at0040,    -- RMA
+															at0041,    -- RLB
+															at0042,    -- RLM
+															at0043]    -- RLA
+														}
+													}
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"inputs_test">
+					description = <"inputs test">
+				>
+				["at0001"] = <
+					text = <"History">
+					description = <"@ internal @">
+				>
+				["at0002"] = <
+					text = <"inputs test">
+					description = <"">
+				>
+				["at0003"] = <
+					text = <"inputs test">
+					description = <"">
+				>
+				["at0004"] = <
+					text = <"Item tree">
+					description = <"@ internal @">
+				>
+				["at0006"] = <
+					text = <"Selection (Blood type)">
+					description = <"">
+				>
+				["at0007"] = <
+					text = <"A -">
+					description = <"">
+				>
+				["at0008"] = <
+					text = <"A +">
+					description = <"">
+				>
+				["at0009"] = <
+					text = <"B -">
+					description = <"">
+				>
+				["at0010"] = <
+					text = <"B +">
+					description = <"">
+				>
+				["at0011"] = <
+					text = <"Text (Free text)">
+					description = <"">
+				>
+				["at0012"] = <
+					text = <"Quantity (Temperature)">
+					description = <"">
+				>
+				["at0013"] = <
+					text = <"Proportion (Na:K)">
+					description = <"">
+				>
+				["at0014"] = <
+					text = <"Count (Day of menstrual cycle)">
+					description = <"">
+				>
+				["at0016"] = <
+					text = <"Only date">
+					description = <"">
+				>
+				["at0017"] = <
+					text = <"Ordinal (Primary Gleason score)">
+					description = <"">
+				>
+				["at0018"] = <
+					text = <"AB -">
+					description = <"">
+				>
+				["at0019"] = <
+					text = <"AB +">
+					description = <"">
+				>
+				["at0020"] = <
+					text = <"O -">
+					description = <"">
+				>
+				["at0021"] = <
+					text = <"O +">
+					description = <"">
+				>
+				["at0022"] = <
+					text = <"1">
+					description = <"">
+				>
+				["at0023"] = <
+					text = <"2">
+					description = <"">
+				>
+				["at0024"] = <
+					text = <"3">
+					description = <"">
+				>
+				["at0025"] = <
+					text = <"4">
+					description = <"">
+				>
+				["at0026"] = <
+					text = <"5">
+					description = <"">
+				>
+				["at0027"] = <
+					text = <"Boolean (Does patient have X)">
+					description = <"">
+				>
+				["at0028"] = <
+					text = <"Duration (Pregnancy)">
+					description = <"">
+				>
+				["at0031"] = <
+					text = <"Location (Prostate biopsy)">
+					description = <"">
+				>
+				["at0032"] = <
+					text = <"LLB">
+					description = <"Utmost-left Base">
+				>
+				["at0033"] = <
+					text = <"LLM">
+					description = <"Utmost-left Middle">
+				>
+				["at0034"] = <
+					text = <"LLA">
+					description = <"Utmost-left Apex">
+				>
+				["at0035"] = <
+					text = <"LMB">
+					description = <"Middle-left Base">
+				>
+				["at0036"] = <
+					text = <"LMM">
+					description = <"Middle-left Middle">
+				>
+				["at0037"] = <
+					text = <"LMA">
+					description = <"Middle-left Apex">
+				>
+				["at0038"] = <
+					text = <"RMB">
+					description = <"Middle-right Base">
+				>
+				["at0039"] = <
+					text = <"RMM">
+					description = <"Middle-right Middle">
+				>
+				["at0040"] = <
+					text = <"RMA">
+					description = <"Middle-right Apex">
+				>
+				["at0041"] = <
+					text = <"RLB">
+					description = <"Utmost-right Base">
+				>
+				["at0042"] = <
+					text = <"RLM">
+					description = <"Utmost-right Middle">
+				>
+				["at0043"] = <
+					text = <"RLA">
+					description = <"Utmost-right Apex">
+				>
+			>
+		>
+	>
