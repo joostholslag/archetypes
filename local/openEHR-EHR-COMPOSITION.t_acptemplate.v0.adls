@@ -1,0 +1,43 @@
+template (adl_version=2.0.6; rm_release=1.1.0; generated; uid=84acbabc-460c-4124-88a0-b320435cddd7; build_uid=152d9d2f-6bcb-30ce-b972-44a62c905c04)
+    openEHR-EHR-COMPOSITION.t_acptemplate.v0.0.1-alpha
+
+specialize
+    openEHR-EHR-COMPOSITION.advance_care.v0
+
+language
+    original_language = <[ISO_639-1::en]>
+
+description
+    original_author = <
+        ["date"] = <"2025-03-17">
+    >
+    lifecycle_state = <"unmanaged">
+    other_details = <
+        ["licence"] = <"">
+        ["custodian_organisation"] = <"">
+        ["original_namespace"] = <"">
+        ["original_publisher"] = <"">
+        ["custodian_namespace"] = <"">
+        ["sem_ver"] = <"0.1.0">
+        ["build_uid"] = <"">
+        ["MD5-CAM-1.0.1"] = <"7edb25d5cf054e8cf88afc08fbb2858d">
+        ["PARENT:MD5-CAM-1.0.1"] = <"B08FF6569A530B3E5FC70322F07E93B4">
+    >
+    details = <
+        ["en"] = <
+            language = <[ISO_639-1::en]>
+        >
+    >
+
+definition
+    COMPOSITION[id1.1]     -- ACP template
+
+terminology
+    term_definitions = <
+        ["en"] = <
+            ["id1.1"] = <
+                text = <"ACP template">
+                description = <"A plan for the management of future health and social care requirements, including chronic illness and end of life care.">
+            >
+        >
+    >
